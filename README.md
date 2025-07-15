@@ -16,7 +16,7 @@ This Code Quality Kit provides a plug-and-play setup to enforce consistent code 
 ### 1. Install the Kit
 
 ```bash
-npm install --save-dev @KasunUdaraWaththeHewa/code-quality-kit
+npm install --save-dev code-quality-kit
 ```
 
 ---
@@ -26,7 +26,7 @@ npm install --save-dev @KasunUdaraWaththeHewa/code-quality-kit
 Run the provided setup script:
 
 ```bash
-node node_modules/@KasunUdaraWaththeHewa/code-quality-kit/scripts/setup.js
+node node_modules/code-quality-kit/scripts/setup.js
 ```
 
 This will:
