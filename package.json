@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "setup": "node scripts/setup.js",
-    "postinstall": "husky install"
+    "setup": "node scripts/setup.js"
   },
   "keywords": [
     "husky",
