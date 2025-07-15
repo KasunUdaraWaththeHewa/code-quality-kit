@@ -1,7 +1,3 @@
-Great! Since the setup is now working, here’s a clean and practical **`README.md`** that you can include with your code quality kit. This will guide developers on how to integrate it into their projects:
-
----
-
 ## 🔧 Code Quality Kit – IgniteX
 
 This Code Quality Kit provides a plug-and-play setup to enforce consistent code quality across projects using:
@@ -20,7 +16,7 @@ This Code Quality Kit provides a plug-and-play setup to enforce consistent code 
 ### 1. Install the Kit
 
 ```bash
-npm install --save-dev @ignitex/code-quality-kit
+npm install --save-dev @KasunUdaraWaththeHewa/code-quality-kit
 ```
 
 ---
@@ -30,7 +26,7 @@ npm install --save-dev @ignitex/code-quality-kit
 Run the provided setup script:
 
 ```bash
-node node_modules/@ignitex/code-quality-kit/scripts/setup.js
+node node_modules/@KasunUdaraWaththeHewa/code-quality-kit/scripts/setup.js
 ```
 
 This will:
@@ -109,8 +105,6 @@ lint-staged.config.js
 ## 👥 Author
 
 **Kasun Udara** – [kasunu2001@gmail.com](mailto:kasunu2001@gmail.com)
-IgniteX Software Solutions
+IgniteX
 
 ---
-
-Would you like me to package this `README.md` into the code-quality-kit repo or update any paths/placeholders based on your real npm package name?
