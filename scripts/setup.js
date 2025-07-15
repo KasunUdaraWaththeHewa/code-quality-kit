@@ -69,7 +69,29 @@ if (settings.husky) {
     if (!existsSync(".husky")) {
       execSync("npx husky install");
     }
-    execSync('npx husky add .husky/pre-commit "npx lint-staged"');
+    const huskyPreCommitPath = '.husky/pre-commit';
+
+// Create the hook with custom content
+execSync(`npx husky add ${huskyPreCommitPath} ""`);
+
+writeFileSync(
+  huskyPreCommitPath,
+  `#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔧 Running Prettier..."
+npx prettier --write .
+
+echo "🔍 Running ESLint..."
+npx eslint . --fix
+
+echo "🎯 Running lint-staged..."
+npx lint-staged
+`
+);
+
+execSync(`chmod +x ${huskyPreCommitPath}`);
+
     if (settings.commitlint) {
       execSync('npx husky add .husky/commit-msg "npx commitlint --edit $1"');
     }
