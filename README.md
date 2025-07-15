@@ -6,12 +6,12 @@ Great! Since the setup is now working, here’s a clean and practical **`README.
 
 This Code Quality Kit provides a plug-and-play setup to enforce consistent code quality across projects using:
 
-* ✅ **Prettier** – Code formatting
-* ✅ **ESLint** – Linting with Prettier integration
-* ✅ **Husky** – Git hooks
-* ✅ **Lint-Staged** – Only run formatters on staged files
-* ✅ **Commitlint** – Enforce conventional commits
-* ✅ **GitHub Actions** – CI for quality checks
+- ✅ **Prettier** – Code formatting
+- ✅ **ESLint** – Linting with Prettier integration
+- ✅ **Husky** – Git hooks
+- ✅ **Lint-Staged** – Only run formatters on staged files
+- ✅ **Commitlint** – Enforce conventional commits
+- ✅ **GitHub Actions** – CI for quality checks
 
 ---
 
@@ -35,10 +35,10 @@ node node_modules/@ignitex/code-quality-kit/scripts/setup.js
 
 This will:
 
-* Create config files
-* Set up Husky pre-commit & commit-msg hooks
-* Add GitHub Actions CI workflow
-* Enable Prettier + ESLint + Commitlint
+- Create config files
+- Set up Husky pre-commit & commit-msg hooks
+- Add GitHub Actions CI workflow
+- Enable Prettier + ESLint + Commitlint
 
 ---
 
@@ -64,9 +64,9 @@ You can turn off any part of the setup by setting its value to `false`.
 
 The pre-commit hook runs:
 
-* ✅ Prettier formatting (`npx prettier --write .`)
-* ✅ ESLint autofix (`npx eslint . --fix`)
-* ✅ Lint-staged for staged files only
+- ✅ Prettier formatting (`npx prettier --write .`)
+- ✅ ESLint autofix (`npx eslint . --fix`)
+- ✅ Lint-staged for staged files only
 
 ---
 
