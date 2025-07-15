@@ -1,0 +1,41 @@
+{
+  "name": "@kasunudarawaththehewa/code-quality-kit",
+  "version": "1.0.0",
+  "description": "Reusable code quality configuration toolkit with ESLint, Prettier, Husky, Commitlint, GitHub Actions, and editor config support.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "postinstall": "husky install"
+  },
+  "keywords": [
+    "husky",
+    "eslint",
+    "prettier",
+    "lint-staged",
+    "commitlint",
+    "code-quality",
+    "ci",
+    "devtools"
+  ],
+  "author": "Kasun Udara",
+  "license": "MIT",
+  "files": [
+    "config",
+    "scripts",
+    ".github",
+    ".editorconfig",
+    ".vscode"
+  ],
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.0",
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
