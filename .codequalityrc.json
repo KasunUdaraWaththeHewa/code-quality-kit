@@ -1,0 +1,7 @@
+{
+  "husky": true,
+  "eslint": true,
+  "prettier": true,
+  "commitlint": false,
+  "ci": true
+}
