@@ -1,6 +1,6 @@
 {
   "name": "code-quality-kit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Reusable code quality configuration toolkit with ESLint, Prettier, Husky, Commitlint, GitHub Actions, and editor config support.",
   "main": "index.js",
   "type": "commonjs",
