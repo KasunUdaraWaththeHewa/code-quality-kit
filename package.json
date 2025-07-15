@@ -8,7 +8,7 @@
     "setup": "node scripts/setup.js"
   },
   "bin": {
-    "code-quality-kit": "./scripts/setup.js"
+    "code-quality-check": "./scripts/setup.js"
   },
   "keywords": [
     "husky",

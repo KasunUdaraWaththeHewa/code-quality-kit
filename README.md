@@ -26,7 +26,7 @@ npm install --save-dev code-quality-kit
 Run the provided setup script:
 
 ```bash
-node node_modules/code-quality-kit/scripts/setup.js
+npx code-quality-check
 ```
 
 This will:
