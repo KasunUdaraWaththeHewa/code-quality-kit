@@ -7,6 +7,9 @@
   "scripts": {
     "setup": "node scripts/setup.js"
   },
+  "bin": {
+    "code-quality-kit": "./scripts/setup.js"
+  },
   "keywords": [
     "husky",
     "eslint",
