@@ -1,5 +1,5 @@
-import { existsSync, mkdirSync, writeFileSync, cpSync, readFileSync } from 'fs';
-import { execSync } from 'child_process';
+const { existsSync, mkdirSync, writeFileSync, cpSync, readFileSync } = require('fs');
+const { execSync } = require('child_process');
 
 const configFile = '.codequalityrc.json';
 const defaultSettings = {
@@ -47,7 +47,7 @@ const workflowsDir = './node_modules/@ignitex/code-quality-kit/.github/workflows
 
 if (settings.husky) {
   try {
-    
+
 // Auto husky install (if not already initialized)
 try {
   if (!existsSync('.husky')) {
