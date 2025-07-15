@@ -7,6 +7,8 @@ const {
 } = require("fs");
 const { execSync } = require("child_process");
 
+const isWindows = process.platform === "win32";
+
 const configFile = ".codequalityrc.json";
 const defaultSettings = {
   husky: true,
@@ -48,9 +50,8 @@ if (existsSync(configFile)) {
   logWarning(".codequalityrc.json not found. Using defaults.");
 }
 
-const configDir = "./node_modules/@ignitex/code-quality-kit/config";
-const workflowsDir =
-  "./node_modules/@ignitex/code-quality-kit/.github/workflows";
+const configDir = "./node_modules/code-quality-kit/config";
+const workflowsDir = "./node_modules/code-quality-kit/.github/workflows";
 
 if (settings.husky) {
   try {
@@ -90,7 +91,11 @@ npx lint-staged
 `,
     );
 
-    execSync(`chmod +x ${huskyPreCommitPath}`);
+    if (!isWindows) {
+      execSync(`chmod +x ${huskyPreCommitPath}`);
+    } else {
+      logWarning("Skipping chmod on Windows.");
+    }
 
     if (settings.commitlint) {
       execSync('npx husky add .husky/commit-msg "npx commitlint --edit $1"');
