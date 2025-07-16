@@ -58,7 +58,6 @@ Object.entries(settings).forEach(([key, value]) => {
 });
 console.log("");
 
-
 const configDir = "./node_modules/code-quality-kit/config";
 const workflowsDir = "./node_modules/code-quality-kit/.github/workflows";
 
