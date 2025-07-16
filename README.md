@@ -2,12 +2,12 @@
 
 This Code Quality Kit provides a plug-and-play setup to enforce consistent code quality across projects using:
 
-* ✅ **Prettier** – Code formatting
-* ✅ **ESLint** – Linting with Prettier integration
-* ✅ **Husky** – Git hooks
-* ✅ **Lint-Staged** – Only run formatters on staged files
-* ✅ **Commitlint** – Enforce conventional commits
-* ✅ **GitHub Actions** – CI for quality checks
+- ✅ **Prettier** – Code formatting
+- ✅ **ESLint** – Linting with Prettier integration
+- ✅ **Husky** – Git hooks
+- ✅ **Lint-Staged** – Only run formatters on staged files
+- ✅ **Commitlint** – Enforce conventional commits
+- ✅ **GitHub Actions** – CI for quality checks
 
 ---
 
@@ -31,10 +31,10 @@ npx code-quality-kit
 
 This will:
 
-* Create config files
-* Set up Husky pre-commit & commit-msg hooks
-* Add GitHub Actions CI workflow
-* Enable Prettier + ESLint + Commitlint
+- Create config files
+- Set up Husky pre-commit & commit-msg hooks
+- Add GitHub Actions CI workflow
+- Enable Prettier + ESLint + Commitlint
 
 ---
 
@@ -60,9 +60,9 @@ You can turn off any part of the setup by setting its value to `false`.
 
 The pre-commit hook runs:
 
-* ✅ Prettier formatting (`npx prettier --write .`)
-* ✅ ESLint autofix (`npx eslint . --fix`)
-* ✅ Lint-staged for staged files only
+- ✅ Prettier formatting (`npx prettier --write .`)
+- ✅ ESLint autofix (`npx eslint . --fix`)
+- ✅ Lint-staged for staged files only
 
 ---
 
@@ -94,7 +94,7 @@ To get real-time linting and formatting feedback in your editor:
 | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)                                        | Integrates ESLint into VS Code           |
 | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)                     | Automatically format code                |
-| [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) *(optional)* | Helps write conventional commit messages |
+| [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) _(optional)_ | Helps write conventional commit messages |
 | [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)                   | Respects `.editorconfig` rules           |
 
 ---
