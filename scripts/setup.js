@@ -44,13 +44,20 @@ if (existsSync(configFile)) {
   try {
     const userConfig = JSON.parse(readFileSync(configFile, "utf-8"));
     settings = { ...settings, ...userConfig };
-    logSuccess(".codequalityrc.json loaded and parsed.");
+    logSuccess(".codequalityrc.json loaded and merged.");
   } catch (error) {
-    logWarning("Invalid .codequalityrc.json. Using defaults.");
+    logWarning("Invalid .codequalityrc.json. Falling back to defaults.");
   }
 } else {
-  logWarning(".codequalityrc.json not found. Using defaults.");
+  logWarning(".codequalityrc.json not found. Falling back to defaults.");
 }
+
+console.log("\n\x1b[36m%s\x1b[0m", "🔍 Final Setup Configuration:");
+Object.entries(settings).forEach(([key, value]) => {
+  console.log(`  ${key}: ${value ? "✅ enabled" : "❌ disabled"}`);
+});
+console.log("");
+
 
 const configDir = "./node_modules/code-quality-kit/config";
 const workflowsDir = "./node_modules/code-quality-kit/.github/workflows";
